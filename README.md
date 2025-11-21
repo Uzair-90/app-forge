@@ -4,7 +4,7 @@
 
 ---
 
-## 🚀 Features
+## Features
 
 - **Natural-Language App Generation**: Describe your app, e.g., "Build a notes app with folder support and iCloud sync," and get a fully functional Xcode project.
 - **Update Existing Projects**: Modify projects via prompts like "Add a password reset screen" without touching the code manually.
@@ -16,7 +16,7 @@
 
 ---
 
-## ⚙️ Getting Started
+##Getting Started
 
 ### Prerequisites
 - macOS with Xcode installed
@@ -33,7 +33,7 @@
 
 ---
 
-## 🔄 Update Workflow
+## Update Workflow
 - Send a new prompt describing updates.
 - Only affected components are regenerated.
 - Validator ensures the updated project is consistent.
@@ -41,7 +41,7 @@
 
 ---
 
-## 📌 Metadata & Git
+## Metadata & Git
 - `.agent_metadata.json` tracks component ownership, dependencies, type, and last modified timestamp.
 - Every agent action = Git commit for full traceability.
 
