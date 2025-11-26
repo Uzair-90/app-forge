@@ -1,0 +1,14 @@
+{
+  "name": "icloud-notes-app",
+  "description": "A notes application with folder support and iCloud synchronization",
+  "architecture": {
+    "type": "ios-app",
+    "framework": "swiftui",
+    "patterns": [
+      "mvvm",
+      "combine"
+    ]
+  },
+  "prompt": "Build me a notes app with folder support and an iCloud sync option",
+  "created_by": "ArchitectAgent"
+}

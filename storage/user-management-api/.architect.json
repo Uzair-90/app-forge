@@ -1,0 +1,14 @@
+{
+  "name": "user-management-api",
+  "description": "RESTful API for user management with CRUD operations",
+  "architecture": {
+    "type": "backend-api",
+    "framework": "nodejs-express",
+    "patterns": [
+      "rest",
+      "mvc"
+    ]
+  },
+  "prompt": "Create a REST API for user management",
+  "created_by": "ArchitectAgent"
+}

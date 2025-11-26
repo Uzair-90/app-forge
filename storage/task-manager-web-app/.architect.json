@@ -1,0 +1,14 @@
+{
+  "name": "task-manager-web-app",
+  "description": "Web application for task management with CRUD operations",
+  "architecture": {
+    "type": "web-app",
+    "framework": "react",
+    "patterns": [
+      "spa",
+      "redux"
+    ]
+  },
+  "prompt": "Build a task management web application",
+  "created_by": "ArchitectAgent"
+}
