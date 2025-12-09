@@ -1,15 +1,7 @@
-import asyncio
-from agents.architect.ArchitectMain import ArchitectAgent
+from agents.architect.ArchitectMain import ArchitectMain
 
-async def test_architect():
-    storage_path = "storage_test"
-    architect = ArchitectAgent("Architect", storage_path)
+agent = ArchitectMain()
 
-    prompt = "Build a notes app with folders"
-    metadata = {}
+result = agent.perform_task("Build me a Notes Taking App for iOS")
 
-    result = await architect.perform_task(prompt, metadata)
-    print("File changes returned by agent:", result)
-
-if __name__ == "__main__":
-    asyncio.run(test_architect())
+print(result)

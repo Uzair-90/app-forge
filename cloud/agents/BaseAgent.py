@@ -24,31 +24,33 @@ Usage:
     - Metadata ensures proper tracking of which agent owns which files.
 """
 
-
-import os
 import json
 from pathlib import Path
+from typing import Dict, Any
 
 class BaseAgent:
-    def __init__(self, name, storage_path):
+    def __init__(self, name: str, storage_path: str):
         self.name = name
-        self.storage_path = Path(storage_path)
-        self.metadata_file = self.storage_path / "metadata.json"
+        self.storage_path = Path(storage_path).resolve()  # resolve absolute path
         self.storage_path.mkdir(parents=True, exist_ok=True)
+
+        self.metadata_file = self.storage_path / "metadata.json"
         if not self.metadata_file.exists():
             self.metadata_file.write_text(json.dumps({}, indent=2))
 
-    def log(self, message):
+    def log(self, message: str):
         print(f"[{self.name}] {message}")
 
-    async def perform_task(self, prompt, metadata):
-        raise NotImplementedError("perform_task must be implemented by subclass")
+    def write_file(self, relative_path: str, content: str):
+        target = self.storage_path / relative_path
+        target.parent.mkdir(parents=True, exist_ok=True)
+        target.write_text(content)
+        self.log(f"Wrote file: {relative_path}")
 
-    def update_metadata(self, file_changes):
+    def update_metadata(self, file_changes: Dict[str, dict]) -> dict:
         metadata = json.loads(self.metadata_file.read_text())
         for file, info in file_changes.items():
             metadata[file] = {"agent": self.name, **info}
         self.metadata_file.write_text(json.dumps(metadata, indent=2))
         self.log("Metadata updated")
         return metadata
-
