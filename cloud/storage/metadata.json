@@ -1,0 +1,42 @@
+{
+  "NotesTaking/Resources/Info.plist": {
+    "agent": "ArchitectAgent",
+    "type": "generated"
+  },
+  "NotesTaking/Sources/AppDelegate.swift": {
+    "agent": "ArchitectAgent",
+    "type": "generated"
+  },
+  "NotesTaking/Sources/AppMain.swift": {
+    "agent": "ArchitectAgent",
+    "type": "generated"
+  },
+  "NotesTaking/Sources/ContentView.swift": {
+    "agent": "ArchitectAgent",
+    "type": "generated"
+  },
+  "NotesTaking/Sources/Extensions/View+Extensions.swift": {
+    "agent": "ArchitectAgent",
+    "type": "generated"
+  },
+  "NotesTaking/Sources/Models/AppState.swift": {
+    "agent": "ArchitectAgent",
+    "type": "generated"
+  },
+  "NotesTaking/Sources/SceneDelegate.swift": {
+    "agent": "ArchitectAgent",
+    "type": "generated"
+  },
+  "NotesTaking/Sources/views/HomeView.swift": {
+    "agent": "ArchitectAgent",
+    "type": "generated"
+  },
+  "NotesTaking/Sources/views/DetailView.swift": {
+    "agent": "ArchitectAgent",
+    "type": "generated"
+  },
+  "NotesTaking/project.yml": {
+    "agent": "ArchitectAgent",
+    "type": "generated"
+  }
+}
