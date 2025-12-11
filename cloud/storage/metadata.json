@@ -1,42 +1,88 @@
 {
-  "NotesTaking/Resources/Info.plist": {
+  "NotesMaster/Resources/Info.plist": {
     "agent": "ArchitectAgent",
     "type": "generated"
   },
-  "NotesTaking/Sources/AppDelegate.swift": {
+  "NotesMaster/Sources/AppDelegate.swift": {
     "agent": "ArchitectAgent",
     "type": "generated"
   },
-  "NotesTaking/Sources/AppMain.swift": {
+  "NotesMaster/Sources/AppMain.swift": {
     "agent": "ArchitectAgent",
     "type": "generated"
   },
-  "NotesTaking/Sources/ContentView.swift": {
+  "NotesMaster/Sources/ContentView.swift": {
+    "agent": "UIModelAgent",
+    "type": "modified",
+    "changes": "added component imports"
+  },
+  "NotesMaster/Sources/Extensions/View+Extensions.swift": {
     "agent": "ArchitectAgent",
     "type": "generated"
   },
-  "NotesTaking/Sources/Extensions/View+Extensions.swift": {
+  "NotesMaster/Sources/Models/AppState.swift": {
     "agent": "ArchitectAgent",
     "type": "generated"
   },
-  "NotesTaking/Sources/Models/AppState.swift": {
+  "NotesMaster/Sources/SceneDelegate.swift": {
     "agent": "ArchitectAgent",
     "type": "generated"
   },
-  "NotesTaking/Sources/SceneDelegate.swift": {
+  "NotesMaster/Sources/views/HomeView.swift": {
     "agent": "ArchitectAgent",
     "type": "generated"
   },
-  "NotesTaking/Sources/views/HomeView.swift": {
+  "NotesMaster/Sources/views/DetailView.swift": {
     "agent": "ArchitectAgent",
     "type": "generated"
   },
-  "NotesTaking/Sources/views/DetailView.swift": {
+  "NotesMaster/project.yml": {
     "agent": "ArchitectAgent",
     "type": "generated"
   },
-  "NotesTaking/project.yml": {
-    "agent": "ArchitectAgent",
-    "type": "generated"
+  "NotesMaster/Sources/Models/Note.swift": {
+    "agent": "UIModelAgent",
+    "type": "created",
+    "file_type": "model"
+  },
+  "NotesMaster/Sources/ViewModels/NotesViewModel.swift": {
+    "agent": "UIModelAgent",
+    "type": "created",
+    "file_type": "viewmodel"
+  },
+  "NotesMaster/Sources/Views/NoteCardView.swift": {
+    "agent": "UIModelAgent",
+    "type": "created",
+    "file_type": "view"
+  },
+  "NotesMaster/Sources/Views/NoteEditorView.swift": {
+    "agent": "UIModelAgent",
+    "type": "created",
+    "file_type": "view"
+  },
+  "NotesMaster/Sources/Views/NotesListView.swift": {
+    "agent": "UIModelAgent",
+    "type": "created",
+    "file_type": "view"
+  },
+  "NotesMaster/Sources/Extensions/Colors.swift": {
+    "agent": "UIModelAgent",
+    "type": "created",
+    "file_type": "extension"
+  },
+  "NotesMaster/Sources/Components/ButtonStyles.swift": {
+    "agent": "UIModelAgent",
+    "type": "created",
+    "file_type": "component"
+  },
+  "NotesMaster/Sources/Components/Cards.swift": {
+    "agent": "UIModelAgent",
+    "type": "created",
+    "file_type": "component"
+  },
+  "NotesMaster/Sources/Components/LoadingViews.swift": {
+    "agent": "UIModelAgent",
+    "type": "created",
+    "file_type": "component"
   }
 }

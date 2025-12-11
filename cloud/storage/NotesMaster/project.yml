@@ -1,11 +1,11 @@
-name: NotesTaking
+name: NotesMaster
 options:
   bundleIdPrefix: com.example
   deploymentTarget:
     iOS: "16.0"
   xcodeVersion: "15.0"
 targets:
-  NotesTaking:
+  NotesMaster:
     type: application
     platform: iOS
     sources:
@@ -15,7 +15,7 @@ targets:
     info:
       path: Resources/Info.plist
       properties:
-        CFBundleDisplayName: Notes Taking
+        CFBundleDisplayName: Notes Master
         UILaunchStoryboardName: LaunchScreen
         UIApplicationSceneManifest:
           UIApplicationSupportsMultipleScenes: false
@@ -25,7 +25,7 @@ targets:
                 UISceneDelegateClassName: "$(PRODUCT_MODULE_NAME).SceneDelegate"
     settings:
       base:
-        PRODUCT_NAME: NotesTaking
+        PRODUCT_NAME: NotesMaster
         TARGETED_DEVICE_FAMILY: 1,2
         IPHONEOS_DEPLOYMENT_TARGET: 16.0
         CODE_SIGN_STYLE: Automatic
@@ -34,13 +34,13 @@ targets:
       - sdk: SwiftUI.framework
       - sdk: UIKit.framework
 schemes:
-  NotesTaking:
+  NotesMaster:
     build:
       targets:
-        NotesTaking: all
+        NotesMaster: all
     run:
       config: Debug
-      executable: NotesTaking
+      executable: NotesMaster
     test:
       config: Debug
       gatherCoverageData: true
