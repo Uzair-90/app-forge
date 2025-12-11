@@ -1,86 +1,106 @@
 {
-  "NotesMaster/Resources/Info.plist": {
+  "ScientificCalculator/Resources/Info.plist": {
     "agent": "ArchitectAgent",
     "type": "generated"
   },
-  "NotesMaster/Sources/AppDelegate.swift": {
+  "ScientificCalculator/Sources/AppDelegate.swift": {
     "agent": "ArchitectAgent",
     "type": "generated"
   },
-  "NotesMaster/Sources/AppMain.swift": {
+  "ScientificCalculator/Sources/AppMain.swift": {
     "agent": "ArchitectAgent",
     "type": "generated"
   },
-  "NotesMaster/Sources/ContentView.swift": {
+  "ScientificCalculator/Sources/ContentView.swift": {
     "agent": "UIModelAgent",
     "type": "modified",
     "changes": "added component imports"
   },
-  "NotesMaster/Sources/Extensions/View+Extensions.swift": {
+  "ScientificCalculator/Sources/Extensions/View+Extensions.swift": {
     "agent": "ArchitectAgent",
     "type": "generated"
   },
-  "NotesMaster/Sources/Models/AppState.swift": {
+  "ScientificCalculator/Sources/Models/AppState.swift": {
     "agent": "ArchitectAgent",
     "type": "generated"
   },
-  "NotesMaster/Sources/SceneDelegate.swift": {
+  "ScientificCalculator/Sources/SceneDelegate.swift": {
     "agent": "ArchitectAgent",
     "type": "generated"
   },
-  "NotesMaster/Sources/views/HomeView.swift": {
+  "ScientificCalculator/Sources/views/HomeView.swift": {
     "agent": "ArchitectAgent",
     "type": "generated"
   },
-  "NotesMaster/Sources/views/DetailView.swift": {
+  "ScientificCalculator/Sources/views/DetailView.swift": {
     "agent": "ArchitectAgent",
     "type": "generated"
   },
-  "NotesMaster/project.yml": {
+  "ScientificCalculator/project.yml": {
     "agent": "ArchitectAgent",
     "type": "generated"
   },
-  "NotesMaster/Sources/Models/Note.swift": {
+  "ScientificCalculator/Sources/Models/CalculatorButtonType.swift": {
     "agent": "UIModelAgent",
     "type": "created",
     "file_type": "model"
   },
-  "NotesMaster/Sources/ViewModels/NotesViewModel.swift": {
+  "ScientificCalculator/Sources/Models/CalculatorMode.swift": {
+    "agent": "UIModelAgent",
+    "type": "created",
+    "file_type": "model"
+  },
+  "ScientificCalculator/Sources/ViewModels/ScientificCalculatorViewModel.swift": {
     "agent": "UIModelAgent",
     "type": "created",
     "file_type": "viewmodel"
   },
-  "NotesMaster/Sources/Views/NoteCardView.swift": {
+  "ScientificCalculator/Sources/Views/Calculator/CalculatorDisplayView.swift": {
     "agent": "UIModelAgent",
     "type": "created",
     "file_type": "view"
   },
-  "NotesMaster/Sources/Views/NoteEditorView.swift": {
+  "ScientificCalculator/Sources/Views/Calculator/CalculatorButtonView.swift": {
     "agent": "UIModelAgent",
     "type": "created",
     "file_type": "view"
   },
-  "NotesMaster/Sources/Views/NotesListView.swift": {
+  "ScientificCalculator/Sources/Views/Calculator/CalculatorKeypadView.swift": {
     "agent": "UIModelAgent",
     "type": "created",
     "file_type": "view"
   },
-  "NotesMaster/Sources/Extensions/Colors.swift": {
+  "ScientificCalculator/Sources/Views/Calculator/HistoryListView.swift": {
+    "agent": "UIModelAgent",
+    "type": "created",
+    "file_type": "view"
+  },
+  "ScientificCalculator/Sources/Views/Settings/CalculatorSettingsView.swift": {
+    "agent": "UIModelAgent",
+    "type": "created",
+    "file_type": "view"
+  },
+  "ScientificCalculator/Sources/Views/Calculator/ScientificCalculatorView.swift": {
+    "agent": "UIModelAgent",
+    "type": "created",
+    "file_type": "view"
+  },
+  "ScientificCalculator/Sources/Extensions/Colors.swift": {
     "agent": "UIModelAgent",
     "type": "created",
     "file_type": "extension"
   },
-  "NotesMaster/Sources/Components/ButtonStyles.swift": {
+  "ScientificCalculator/Sources/Components/ButtonStyles.swift": {
     "agent": "UIModelAgent",
     "type": "created",
     "file_type": "component"
   },
-  "NotesMaster/Sources/Components/Cards.swift": {
+  "ScientificCalculator/Sources/Components/Cards.swift": {
     "agent": "UIModelAgent",
     "type": "created",
     "file_type": "component"
   },
-  "NotesMaster/Sources/Components/LoadingViews.swift": {
+  "ScientificCalculator/Sources/Components/LoadingViews.swift": {
     "agent": "UIModelAgent",
     "type": "created",
     "file_type": "component"

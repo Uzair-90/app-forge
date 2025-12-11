@@ -1,11 +1,11 @@
-name: NotesMaster
+name: ScientificCalculator
 options:
   bundleIdPrefix: com.example
   deploymentTarget:
-    iOS: "16.0"
+    iOS: "15.0"
   xcodeVersion: "15.0"
 targets:
-  NotesMaster:
+  ScientificCalculator:
     type: application
     platform: iOS
     sources:
@@ -15,7 +15,7 @@ targets:
     info:
       path: Resources/Info.plist
       properties:
-        CFBundleDisplayName: Notes Master
+        CFBundleDisplayName: Scientific Calculator
         UILaunchStoryboardName: LaunchScreen
         UIApplicationSceneManifest:
           UIApplicationSupportsMultipleScenes: false
@@ -25,22 +25,22 @@ targets:
                 UISceneDelegateClassName: "$(PRODUCT_MODULE_NAME).SceneDelegate"
     settings:
       base:
-        PRODUCT_NAME: NotesMaster
+        PRODUCT_NAME: ScientificCalculator
         TARGETED_DEVICE_FAMILY: 1,2
-        IPHONEOS_DEPLOYMENT_TARGET: 16.0
+        IPHONEOS_DEPLOYMENT_TARGET: 15.0
         CODE_SIGN_STYLE: Automatic
         DEVELOPMENT_TEAM: ""
     dependencies:
       - sdk: SwiftUI.framework
       - sdk: UIKit.framework
 schemes:
-  NotesMaster:
+  ScientificCalculator:
     build:
       targets:
-        NotesMaster: all
+        ScientificCalculator: all
     run:
       config: Debug
-      executable: NotesMaster
+      executable: ScientificCalculator
     test:
       config: Debug
       gatherCoverageData: true

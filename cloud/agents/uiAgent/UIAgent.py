@@ -149,7 +149,7 @@ class UIModelAgent(BaseAgent):
         existing_files_str = "\n".join(existing_files)
 
         response = self.client.chat.completions.create(
-            model="gpt-4",
+            model="gpt-5.1",
             messages=[
                 {"role": "system", "content": system_prompt},
                 {"role": "user", "content": f"Requirements: {query}\n\nExisting files:\n{existing_files_str}"}
@@ -170,7 +170,7 @@ class UIModelAgent(BaseAgent):
         """
         
         response = self.client.chat.completions.create(
-            model="gpt-4",
+            model="gpt-5.1",
             messages=[
                 {"role": "system", "content": system_prompt},
                 {"role": "user", "content": f"File: {file_path}\n\nCurrent content:\n{current_content}\n\nRequirements: {requirements}"}
