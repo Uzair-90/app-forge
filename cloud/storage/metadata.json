@@ -1,108 +1,184 @@
 {
-  "ScientificCalculator/Resources/Info.plist": {
+  "TaskFlow/Resources/Info.plist": {
     "agent": "ArchitectAgent",
     "type": "generated"
   },
-  "ScientificCalculator/Sources/AppDelegate.swift": {
+  "TaskFlow/Sources/AppDelegate.swift": {
     "agent": "ArchitectAgent",
     "type": "generated"
   },
-  "ScientificCalculator/Sources/AppMain.swift": {
+  "TaskFlow/Sources/AppMain.swift": {
     "agent": "ArchitectAgent",
     "type": "generated"
   },
-  "ScientificCalculator/Sources/ContentView.swift": {
+  "TaskFlow/Sources/ContentView.swift": {
     "agent": "UIModelAgent",
     "type": "modified",
     "changes": "added component imports"
   },
-  "ScientificCalculator/Sources/Extensions/View+Extensions.swift": {
+  "TaskFlow/Sources/Extensions/View+Extensions.swift": {
     "agent": "ArchitectAgent",
     "type": "generated"
   },
-  "ScientificCalculator/Sources/Models/AppState.swift": {
+  "TaskFlow/Sources/Models/AppState.swift": {
+    "agent": "LogicAgent",
+    "type": "modified",
+    "changes": "added error handler"
+  },
+  "TaskFlow/Sources/SceneDelegate.swift": {
     "agent": "ArchitectAgent",
     "type": "generated"
   },
-  "ScientificCalculator/Sources/SceneDelegate.swift": {
+  "TaskFlow/Sources/views/HomeView.swift": {
     "agent": "ArchitectAgent",
     "type": "generated"
   },
-  "ScientificCalculator/Sources/views/HomeView.swift": {
+  "TaskFlow/Sources/views/DetailView.swift": {
     "agent": "ArchitectAgent",
     "type": "generated"
   },
-  "ScientificCalculator/Sources/views/DetailView.swift": {
+  "TaskFlow/project.yml": {
     "agent": "ArchitectAgent",
     "type": "generated"
   },
-  "ScientificCalculator/project.yml": {
-    "agent": "ArchitectAgent",
-    "type": "generated"
+  "TaskFlow/Sources/Models/TodoItem.swift": {
+    "agent": "LogicAgent",
+    "type": "modified",
+    "changes": 1
   },
-  "ScientificCalculator/Sources/Models/CalculatorButtonType.swift": {
+  "TaskFlow/Sources/Models/TodoFilter.swift": {
     "agent": "UIModelAgent",
     "type": "created",
     "file_type": "model"
   },
-  "ScientificCalculator/Sources/Models/CalculatorMode.swift": {
-    "agent": "UIModelAgent",
-    "type": "created",
-    "file_type": "model"
+  "TaskFlow/Sources/Services/TodoStorageService.swift": {
+    "agent": "LogicAgent",
+    "type": "modified",
+    "changes": 1
   },
-  "ScientificCalculator/Sources/ViewModels/ScientificCalculatorViewModel.swift": {
-    "agent": "UIModelAgent",
-    "type": "created",
-    "file_type": "viewmodel"
+  "TaskFlow/Sources/ViewModels/TodoListViewModel.swift": {
+    "agent": "LogicAgent",
+    "type": "modified",
+    "changes": 1
   },
-  "ScientificCalculator/Sources/Views/Calculator/CalculatorDisplayView.swift": {
-    "agent": "UIModelAgent",
-    "type": "created",
-    "file_type": "view"
-  },
-  "ScientificCalculator/Sources/Views/Calculator/CalculatorButtonView.swift": {
+  "TaskFlow/Sources/Views/Todo/TodoListView.swift": {
     "agent": "UIModelAgent",
     "type": "created",
     "file_type": "view"
   },
-  "ScientificCalculator/Sources/Views/Calculator/CalculatorKeypadView.swift": {
+  "TaskFlow/Sources/Views/Todo/TodoRowView.swift": {
     "agent": "UIModelAgent",
     "type": "created",
     "file_type": "view"
   },
-  "ScientificCalculator/Sources/Views/Calculator/HistoryListView.swift": {
+  "TaskFlow/Sources/Views/Todo/TodoDetailView.swift": {
     "agent": "UIModelAgent",
     "type": "created",
     "file_type": "view"
   },
-  "ScientificCalculator/Sources/Views/Settings/CalculatorSettingsView.swift": {
+  "TaskFlow/Sources/Views/Todo/TodoEditView.swift": {
     "agent": "UIModelAgent",
     "type": "created",
     "file_type": "view"
   },
-  "ScientificCalculator/Sources/Views/Calculator/ScientificCalculatorView.swift": {
+  "TaskFlow/Sources/Views/Todo/TodoEmptyStateView.swift": {
     "agent": "UIModelAgent",
     "type": "created",
     "file_type": "view"
   },
-  "ScientificCalculator/Sources/Extensions/Colors.swift": {
+  "TaskFlow/Sources/Extensions/Colors.swift": {
     "agent": "UIModelAgent",
     "type": "created",
     "file_type": "extension"
   },
-  "ScientificCalculator/Sources/Components/ButtonStyles.swift": {
+  "TaskFlow/Sources/Components/ButtonStyles.swift": {
     "agent": "UIModelAgent",
     "type": "created",
     "file_type": "component"
   },
-  "ScientificCalculator/Sources/Components/Cards.swift": {
+  "TaskFlow/Sources/Components/Cards.swift": {
     "agent": "UIModelAgent",
     "type": "created",
     "file_type": "component"
   },
-  "ScientificCalculator/Sources/Components/LoadingViews.swift": {
+  "TaskFlow/Sources/Components/LoadingViews.swift": {
     "agent": "UIModelAgent",
     "type": "created",
     "file_type": "component"
+  },
+  "TaskFlow/Sources/Models/TodoProject.swift": {
+    "agent": "LogicAgent",
+    "type": "created",
+    "file_type": "model",
+    "purpose": "Project entity to group todo items within TaskFlow"
+  },
+  "TaskFlow/Sources/Models/TodoTag.swift": {
+    "agent": "LogicAgent",
+    "type": "created",
+    "file_type": "model",
+    "purpose": "Tag entity to label todo items with multiple categories"
+  },
+  "TaskFlow/Sources/Models/TodoValidation.swift": {
+    "agent": "LogicAgent",
+    "type": "created",
+    "file_type": "model",
+    "purpose": "Validation rules and error definitions for todo items and related entities"
+  },
+  "TaskFlow/Sources/Services/TodoRepository.swift": {
+    "agent": "LogicAgent",
+    "type": "created",
+    "file_type": "repository",
+    "purpose": "Repository abstraction that coordinates TodoStorageService and adds domain-specific operations"
+  },
+  "TaskFlow/Sources/Services/TodoStorageServiceProtocol.swift": {
+    "agent": "LogicAgent",
+    "type": "created",
+    "file_type": "service",
+    "purpose": "Abstraction for the storage service to enable dependency inversion and testability"
+  },
+  "TaskFlow/Sources/Services/ProjectRepository.swift": {
+    "agent": "LogicAgent",
+    "type": "created",
+    "file_type": "repository",
+    "purpose": "Repository for managing TodoProject entities with UserDefaults persistence"
+  },
+  "TaskFlow/Sources/Services/TagRepository.swift": {
+    "agent": "LogicAgent",
+    "type": "created",
+    "file_type": "repository",
+    "purpose": "Repository for managing TodoTag entities with UserDefaults persistence"
+  },
+  "TaskFlow/Sources/ViewModels/TaskFlowDashboardViewModel.swift": {
+    "agent": "LogicAgent",
+    "type": "created",
+    "file_type": "viewmodel",
+    "purpose": "High-level view model for dashboard/home to expose aggregated state and actions"
+  },
+  "TaskFlow/Tests/TodoRepositoryTests.swift": {
+    "agent": "LogicAgent",
+    "type": "created",
+    "file_type": "utility",
+    "purpose": "Unit test stubs for TodoRepository critical business logic"
+  },
+  "TaskFlow/Tests/TodoValidatorTests.swift": {
+    "agent": "LogicAgent",
+    "type": "created",
+    "file_type": "utility",
+    "purpose": "Unit test stubs for validation rules in TodoValidator"
+  },
+  "TaskFlow/Sources/Services/NetworkService.swift": {
+    "agent": "LogicAgent",
+    "type": "created",
+    "file_type": "utility"
+  },
+  "TaskFlow/Sources/Utilities/ErrorHandler.swift": {
+    "agent": "LogicAgent",
+    "type": "created",
+    "file_type": "utility"
+  },
+  "TaskFlow/Sources/Utilities/Validation.swift": {
+    "agent": "LogicAgent",
+    "type": "created",
+    "file_type": "utility"
   }
 }
