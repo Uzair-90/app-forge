@@ -1,0 +1,13 @@
+name: To-DoList
+options:
+  bundleIdPrefix: com.example
+  deploymentTarget:
+    iOS: "16.0"
+targets:
+  To-DoList:
+    type: application
+    platform: iOS
+    sources: [Sources, Resources]
+    settings:
+      PRODUCT_NAME: To-DoList
+      IPHONEOS_DEPLOYMENT_TARGET: 16.0

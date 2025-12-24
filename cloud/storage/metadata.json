@@ -1,184 +1,151 @@
 {
-  "TaskFlow/Resources/Info.plist": {
-    "agent": "ArchitectAgent",
-    "type": "generated"
-  },
-  "TaskFlow/Sources/AppDelegate.swift": {
-    "agent": "ArchitectAgent",
-    "type": "generated"
-  },
-  "TaskFlow/Sources/AppMain.swift": {
-    "agent": "ArchitectAgent",
-    "type": "generated"
-  },
-  "TaskFlow/Sources/ContentView.swift": {
-    "agent": "UIModelAgent",
-    "type": "modified",
-    "changes": "added component imports"
-  },
-  "TaskFlow/Sources/Extensions/View+Extensions.swift": {
-    "agent": "ArchitectAgent",
-    "type": "generated"
-  },
-  "TaskFlow/Sources/Models/AppState.swift": {
-    "agent": "LogicAgent",
-    "type": "modified",
-    "changes": "added error handler"
-  },
-  "TaskFlow/Sources/SceneDelegate.swift": {
-    "agent": "ArchitectAgent",
-    "type": "generated"
-  },
-  "TaskFlow/Sources/views/HomeView.swift": {
-    "agent": "ArchitectAgent",
-    "type": "generated"
-  },
-  "TaskFlow/Sources/views/DetailView.swift": {
-    "agent": "ArchitectAgent",
-    "type": "generated"
-  },
-  "TaskFlow/project.yml": {
-    "agent": "ArchitectAgent",
-    "type": "generated"
-  },
-  "TaskFlow/Sources/Models/TodoItem.swift": {
+  "phases": [
+    {
+      "agent": "ArchitectAgent",
+      "timestamp": "2025-12-18T19:12:14.971171",
+      "results": {
+        "app_name": "To-Do List",
+        "llm_result": {
+          "app_name": "To-Do List",
+          "description": "An iOS to-do list application that lets users create, view, edit, complete, and delete tasks, with optional organization features like due dates and reminders.",
+          "deployment_target": "16.0",
+          "uses_swiftui": true,
+          "features": [
+            "Task CRUD (create, read, update, delete)",
+            "Mark tasks as complete/incomplete",
+            "Task list with sections (Active vs Completed)",
+            "Task details (title, notes, due date)",
+            "Sorting (by due date, creation date, title)",
+            "Search tasks",
+            "Local persistence (Core Data or SwiftData)",
+            "Basic reminders/notifications for due dates",
+            "Settings (default sort order, notification toggle)",
+            "iCloud sync (optional)"
+          ],
+          "color_scheme": "blue"
+        },
+        "files_created": 10
+      }
+    }
+  ],
+  "To-DoList/Sources/Models/TodoItem.swift": {
     "agent": "LogicAgent",
     "type": "modified",
     "changes": 1
   },
-  "TaskFlow/Sources/Models/TodoFilter.swift": {
+  "To-DoList/Sources/Models/TodoFilter.swift": {
     "agent": "UIModelAgent",
     "type": "created",
     "file_type": "model"
   },
-  "TaskFlow/Sources/Services/TodoStorageService.swift": {
+  "To-DoList/Sources/Utility/TodoStore.swift": {
     "agent": "LogicAgent",
     "type": "modified",
     "changes": 1
   },
-  "TaskFlow/Sources/ViewModels/TodoListViewModel.swift": {
+  "To-DoList/Sources/ViewModels/TodoListViewModel.swift": {
     "agent": "LogicAgent",
     "type": "modified",
     "changes": 1
   },
-  "TaskFlow/Sources/Views/Todo/TodoListView.swift": {
+  "To-DoList/Sources/Views/TodoRowView.swift": {
     "agent": "UIModelAgent",
     "type": "created",
     "file_type": "view"
   },
-  "TaskFlow/Sources/Views/Todo/TodoRowView.swift": {
+  "To-DoList/Sources/Views/EmptyStateView.swift": {
     "agent": "UIModelAgent",
     "type": "created",
     "file_type": "view"
   },
-  "TaskFlow/Sources/Views/Todo/TodoDetailView.swift": {
+  "To-DoList/Sources/Views/TodoEditorView.swift": {
     "agent": "UIModelAgent",
     "type": "created",
     "file_type": "view"
   },
-  "TaskFlow/Sources/Views/Todo/TodoEditView.swift": {
+  "To-DoList/Sources/Views/TaskDetailView.swift": {
     "agent": "UIModelAgent",
     "type": "created",
     "file_type": "view"
   },
-  "TaskFlow/Sources/Views/Todo/TodoEmptyStateView.swift": {
+  "To-DoList/Sources/Views/TodoListView.swift": {
     "agent": "UIModelAgent",
     "type": "created",
     "file_type": "view"
   },
-  "TaskFlow/Sources/Extensions/Colors.swift": {
+  "To-DoList/Sources/ContentView.swift": {
     "agent": "UIModelAgent",
-    "type": "created",
-    "file_type": "extension"
+    "type": "modified",
+    "changes": 2
   },
-  "TaskFlow/Sources/Components/ButtonStyles.swift": {
+  "To-DoList/Sources/Views/HomeView.swift": {
     "agent": "UIModelAgent",
-    "type": "created",
-    "file_type": "component"
+    "type": "modified",
+    "changes": 1
   },
-  "TaskFlow/Sources/Components/Cards.swift": {
+  "To-DoList/Sources/Views/DetailView.swift": {
     "agent": "UIModelAgent",
-    "type": "created",
-    "file_type": "component"
+    "type": "modified",
+    "changes": 1
   },
-  "TaskFlow/Sources/Components/LoadingViews.swift": {
-    "agent": "UIModelAgent",
-    "type": "created",
-    "file_type": "component"
-  },
-  "TaskFlow/Sources/Models/TodoProject.swift": {
+  "To-DoList/Sources/Services/TodoRepository.swift": {
     "agent": "LogicAgent",
     "type": "created",
-    "file_type": "model",
-    "purpose": "Project entity to group todo items within TaskFlow"
+    "file_type": "service"
   },
-  "TaskFlow/Sources/Models/TodoTag.swift": {
-    "agent": "LogicAgent",
-    "type": "created",
-    "file_type": "model",
-    "purpose": "Tag entity to label todo items with multiple categories"
-  },
-  "TaskFlow/Sources/Models/TodoValidation.swift": {
-    "agent": "LogicAgent",
-    "type": "created",
-    "file_type": "model",
-    "purpose": "Validation rules and error definitions for todo items and related entities"
-  },
-  "TaskFlow/Sources/Services/TodoRepository.swift": {
-    "agent": "LogicAgent",
-    "type": "created",
-    "file_type": "repository",
-    "purpose": "Repository abstraction that coordinates TodoStorageService and adds domain-specific operations"
-  },
-  "TaskFlow/Sources/Services/TodoStorageServiceProtocol.swift": {
-    "agent": "LogicAgent",
-    "type": "created",
-    "file_type": "service",
-    "purpose": "Abstraction for the storage service to enable dependency inversion and testability"
-  },
-  "TaskFlow/Sources/Services/ProjectRepository.swift": {
-    "agent": "LogicAgent",
-    "type": "created",
-    "file_type": "repository",
-    "purpose": "Repository for managing TodoProject entities with UserDefaults persistence"
-  },
-  "TaskFlow/Sources/Services/TagRepository.swift": {
-    "agent": "LogicAgent",
-    "type": "created",
-    "file_type": "repository",
-    "purpose": "Repository for managing TodoTag entities with UserDefaults persistence"
-  },
-  "TaskFlow/Sources/ViewModels/TaskFlowDashboardViewModel.swift": {
-    "agent": "LogicAgent",
-    "type": "created",
-    "file_type": "viewmodel",
-    "purpose": "High-level view model for dashboard/home to expose aggregated state and actions"
-  },
-  "TaskFlow/Tests/TodoRepositoryTests.swift": {
-    "agent": "LogicAgent",
-    "type": "created",
-    "file_type": "utility",
-    "purpose": "Unit test stubs for TodoRepository critical business logic"
-  },
-  "TaskFlow/Tests/TodoValidatorTests.swift": {
-    "agent": "LogicAgent",
-    "type": "created",
-    "file_type": "utility",
-    "purpose": "Unit test stubs for validation rules in TodoValidator"
-  },
-  "TaskFlow/Sources/Services/NetworkService.swift": {
+  "To-DoList/Sources/Services/TodoPersistenceError.swift": {
     "agent": "LogicAgent",
     "type": "created",
     "file_type": "utility"
   },
-  "TaskFlow/Sources/Utilities/ErrorHandler.swift": {
+  "To-DoList/Sources/Services/TodoDiskRepository.swift": {
+    "agent": "LogicAgent",
+    "type": "created",
+    "file_type": "service"
+  },
+  "To-DoList/Sources/Services/TodoValidationError.swift": {
     "agent": "LogicAgent",
     "type": "created",
     "file_type": "utility"
   },
-  "TaskFlow/Sources/Utilities/Validation.swift": {
+  "To-DoList/Sources/Services/TodoValidator.swift": {
     "agent": "LogicAgent",
     "type": "created",
     "file_type": "utility"
+  },
+  "To-DoList/Sources/Services/TodoService.swift": {
+    "agent": "LogicAgent",
+    "type": "created",
+    "file_type": "service"
+  },
+  "To-DoList/Sources/Managers/ReminderManager.swift": {
+    "agent": "LogicAgent",
+    "type": "created",
+    "file_type": "manager"
+  },
+  "To-DoList/Sources/Services/AppContainer.swift": {
+    "agent": "LogicAgent",
+    "type": "created",
+    "file_type": "utility"
+  },
+  "To-DoList/Sources/Services/InMemoryTodoRepository.swift": {
+    "agent": "LogicAgent",
+    "type": "created",
+    "file_type": "service"
+  },
+  "To-DoList/Sources/ViewModels/TodoEditorViewModel.swift": {
+    "agent": "LogicAgent",
+    "type": "created",
+    "file_type": "viewmodel"
+  },
+  "To-DoList/Tests/TodoServiceTests.swift": {
+    "agent": "LogicAgent",
+    "type": "created",
+    "file_type": "utility"
+  },
+  "To-DoList/Sources/AppMain.swift": {
+    "agent": "LogicAgent",
+    "type": "modified",
+    "changes": 2
   }
 }

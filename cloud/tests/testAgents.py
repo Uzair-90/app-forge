@@ -2,7 +2,7 @@
 import json
 import time
 from pathlib import Path
-from agents.architect.ArchitectMain import ArchitectMain
+from agents.architect.ArchitectMain import ArchitectAgent
 from agents.uiAgent.UIAgent import UIModelAgent
 from agents.logicAgent.logicMain import LogicAgent
 
@@ -46,7 +46,7 @@ def main():
     print("-" * 40)
     
     # You can hardcode or take user input
-    user_request = "Build me a to-do list App for iOS"
+    user_request = "Build me to-do list Applicatioin for iOS"
     # For interactive mode, uncomment:
     # user_request = input("Describe your iOS app: ").strip()
     # if not user_request:
@@ -62,7 +62,7 @@ def main():
     print("Creating project structure...")
     
     try:
-        architect = ArchitectMain()
+        architect = ArchitectAgent()
         arch_result = architect.perform_task(user_request)
         
         print(f"✓ Project created: {arch_result['app_name']}")
